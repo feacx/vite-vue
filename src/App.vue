@@ -1,12 +1,9 @@
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png"
-  >
   <router-view />
 </template>
 
 <script lang="ts">
+import 'element-plus/packages/theme-chalk/src/base.scss';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -14,13 +11,6 @@ export default defineComponent({
 });
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import url('@/assets/scss/main.scss');
 </style>
