@@ -2,10 +2,14 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
 import styleImport from 'vite-plugin-style-import';
+import VitePluginComponents, { ElementPlusResolver } from 'vite-plugin-components';
 
 export default defineConfig({
   plugins: [
     vue(),
+    VitePluginComponents({
+      customComponentResolvers: [ElementPlusResolver()],
+    }),
     styleImport({
       libs: [{
         libraryName: 'element-plus',

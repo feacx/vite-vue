@@ -1,22 +1,25 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Index from '@/views/Index.vue';
 import About from '@/views/About.vue';
-import UserDetail from '@/views/User/Detail.vue';
 import NotFound from '@/views/NotFound.vue';
+
+const Layout = () => import('@/views/Layout.vue');
+const Index = () => import('@/views/Index.vue');
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Index,
+    name: 'layout',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        component: Index
+      }
+    ]
   }, {
     path: '/about',
     name: 'About',
     component: About,
-  }, {
-    path: '/user/:id',
-    name: 'UserDetail',
-    component: UserDetail,
   }, {
     path: '/:catchAll(.*)',
     component: NotFound,

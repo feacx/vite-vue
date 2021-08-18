@@ -3,7 +3,6 @@
 </template>
 
 <script lang="ts">
-import 'element-plus/packages/theme-chalk/src/base.scss';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
