@@ -17,8 +17,6 @@
 import { computed, defineComponent, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 
-
-
 export default defineComponent({
   setup() {
 
