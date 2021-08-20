@@ -1,7 +1,16 @@
 <template>
   <el-container>
     <el-aside width="200px">
-      Aside
+      <div>
+        <router-link to="/">
+          第一个
+        </router-link>
+      </div>
+      <div>
+        <router-link to="/about">
+          第二个
+        </router-link>
+      </div>
     </el-aside>
     <el-container>
       <el-header>{{ key }}</el-header>
