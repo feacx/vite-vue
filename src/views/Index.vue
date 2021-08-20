@@ -1,19 +1,38 @@
 <template>
   <div>
     <h1>{{ title }} Page</h1>
+    <button @click="toggle">
+      切换
+    </button>
+    <my-test />
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent, Ref, ref } from 'vue';
+import MyTest from '@/components/MyTest.vue';
+
+export default defineComponent({
   name: 'Index',
-  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-  setup() {
-    return {
-      title: 'Index'
-    };
+  components: {
+    MyTest
   },
-};
+  setup() {
+    const title = ref('hello，Vue3');
+
+    let isShow: Ref<boolean> = ref(false);
+
+    const toggle = () => {
+      isShow.value = false;
+    };
+
+    return {
+      title,
+      isShow,
+      toggle,
+    };
+  }
+});
 </script>
 
 <style lang="scss" scoped>
