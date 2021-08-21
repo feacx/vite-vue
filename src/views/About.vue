@@ -4,9 +4,8 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup() {
     return {};
   },
