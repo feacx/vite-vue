@@ -1,16 +1,15 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  setup() {
+    return {};
+  },
+});
+</script>
+
 <template>
   <div>
     关于我们
   </div>
 </template>
-
-<script lang="ts">
-export default {
-  setup() {
-    return {};
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-</style>
