@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>{{ title }} Page</h1>
+    <h1 class="title">
+      {{ title }} Page
+    </h1>
   </div>
 </template>
 
