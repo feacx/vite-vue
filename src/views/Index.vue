@@ -30,7 +30,7 @@ export default defineComponent({
   setup() {
     const state = reactive({
       Account: 'admin',
-      Password: 'hhhh',
+      Password: '123456',
     });
     
     const handleLogin = async () => {
@@ -39,7 +39,7 @@ export default defineComponent({
         password: state.Password,
       };
       const res = await UserService.login(loginParams);
-       console.log(res);
+      console.log(res);
     };
 
     const handleRegister = async () => {
