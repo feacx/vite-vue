@@ -9,10 +9,11 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "/@/*": [ // / to begin with.
+      "@/*": [ // / to begin with.
         "src/*"
       ]
     },

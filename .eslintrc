@@ -17,6 +17,9 @@
   ],
   "rules": {
     "semi": [2, "always"],
-    "quotes": [2, "single"]
+    "quotes": [2, "single"],
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "vue/singleline-html-element-content-newline": ["off"],
+    "vue/multiline-html-element-content-newline": ["off"]
   }
 }
